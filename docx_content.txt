@@ -1,0 +1,30 @@
+SAYLANI MASS IT TRAINING  (SMIT)
+Agentic AI Hackathon
+Build Pakistan's Digital Future  ·  JobScout AI Challenge
+  Individual or Team    Free Tech Stack    Live Deployment Required  
+1.  The Challenge
+You will build JobScout AI — an autonomous career agent that acts as a personal job-hunting assistant. The agent must independently analyze a candidate's CV, search for real-time job listings that match their profile, and justify every recommendation with clear reasoning.
+This is not a simple search widget. It must operate as a true agentic system: it receives an input (a CV), breaks the task down on its own, queries external tools, evaluates results against the candidate profile, and presents ranked, reasoned job matches — all without manual step-by-step instructions from the user.
+2.  Core Requirements
+
+3.  Agentic Workflow (Expected Flow)
+Your agent should follow this autonomous loop:
+Ingest: Parse the uploaded CV and extract structured data (skills, role titles, years of experience, location preference).
+Plan: The LLM generates a set of search queries optimized for the candidate's profile.
+Search: The agent calls a real-time job search tool (Tavily, Serper, etc.) with each query.
+Evaluate: Each job description is compared against the candidate profile using the LLM.
+Rank & Explain: Jobs are scored and returned with a short reasoning paragraph per match.
+Display: Results are presented in the dashboard with filters and sorting options.
+
+4.  Approved Technology Stack (All Free)
+Agent Frameworks:  LangChain  ·  LangGraph  ·  OpenAI Agent SDK  ·  Claude Agent SDK
+LLMs (Free Tier):  Groq (Llama 3)  ·  Google Gemini  ·  OpenAI
+Search Tools:  Tavily  ·  Serper  ·  Jina Reader
+Hosting:  Vercel  ·  Hugging Face  ·  Render  ·  Railway
+You may use any combination from the above. Paid tools or APIs are not permitted for the judging demo.
+6.  Submission Checklist
+✔  Live Deployment Link: Hosted on Vercel, Railway, Render, or Hugging Face Spaces. The app must be fully functional at the time of judging.
+✔  Public GitHub Repository: Clean commit history, a proper README explaining the architecture, setup instructions, and environment variables. Never commit API keys.
+✔  Demo Video (2–3 minutes): Screen recording showing CV upload, the agent running autonomously, and matched job results with reasoning. No slides-only submissions.
+
+Organizer: SMIT — Saylani Mass IT Training     ·     Theme: Agentic AI · Real-World Impact     ·     Deadline: TBD
