@@ -1,0 +1,19 @@
+# Render Blueprint — deploy the FastAPI API from this monorepo.
+# Dashboard: New → Blueprint → connect repo → set GROQ_API_KEY & TAVILY_API_KEY when prompted.
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: jobscout-ai-api
+    runtime: python
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
